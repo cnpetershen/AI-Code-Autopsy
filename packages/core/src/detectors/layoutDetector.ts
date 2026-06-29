@@ -1,5 +1,4 @@
 import { JSXElementInfo, Finding, DetectorResult, ASTQuery } from '../ast/types';
-import { queryElements, findChildren } from '../ast/traverse';
 
 interface LayoutPattern {
   id: string;

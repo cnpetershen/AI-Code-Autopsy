@@ -27,8 +27,7 @@ jobs:
       - name: Run AI Code Autopsy CI
         id: autopsy
         run: |
-          npx ai-code-autopsy ci src/ --threshold 0.5 > /tmp/autopsy-result.json 2>&1 || true
-          echo "autopsy_exit_code=$?" >> $GITHUB_OUTPUT
+          npx ai-code-autopsy ci packages/core/src/index.ts --threshold 0.5 > /tmp/autopsy-result.json 2>&1 || true
 
       - name: Parse and display results
         id: parse

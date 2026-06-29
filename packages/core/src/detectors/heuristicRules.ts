@@ -1,5 +1,4 @@
 import { JSXElementInfo, Finding, DetectorResult } from '../ast/types';
-import { queryElements } from '../ast/traverse';
 
 export interface HeuristicRule {
   id: string;

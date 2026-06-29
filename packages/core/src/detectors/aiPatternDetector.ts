@@ -1,5 +1,4 @@
 import { JSXElementInfo, Finding, DetectorResult } from '../ast/types';
-import { queryElements, findChildren } from '../ast/traverse';
 import { tokenizeTailwind } from './tailwindDetector';
 
 interface AIPatternRule {
