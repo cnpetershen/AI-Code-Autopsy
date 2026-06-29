@@ -98,7 +98,7 @@ function showResultPanel(result: any) {
     { enableScripts: false }
   );
 
-  const score = (result.analysis.score * 100).toFixed(0);
+  const score = Number((result.analysis.score * 100).toFixed(0));
   const findings = result.analysis.findings.length;
 
   panel.webview.html = `<!DOCTYPE html>
