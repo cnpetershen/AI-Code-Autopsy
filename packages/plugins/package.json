@@ -1,0 +1,25 @@
+{
+  "name": "@ai-code-autopsy/plugins",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Framework plugins for AI Code Autopsy (React, Vue, Svelte)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ai-code-autopsy/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}

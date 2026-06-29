@@ -1,0 +1,60 @@
+{
+  "name": "ai-code-autopsy-vscode",
+  "displayName": "AI Code Autopsy",
+  "description": "Autopsy AI-generated code and expose its structural risks in real-time",
+  "version": "1.0.0",
+  "publisher": "ai-code-autopsy",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Linters", "Programming Languages", "Other", "Formatters"],
+  "activationEvents": [
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-code-autopsy.scan",
+        "title": "AI Code Autopsy: Scan current file"
+      },
+      {
+        "command": "ai-code-autopsy.fix",
+        "title": "AI Code Autopsy: Fix AI patterns in current file"
+      }
+    ],
+    "configuration": {
+      "title": "AI Code Autopsy",
+      "properties": {
+        "ai-code-autopsy.preset": {
+          "type": "string",
+          "default": "balanced",
+          "enum": ["strict", "balanced", "experimental"],
+          "description": "Detection strictness preset"
+        },
+        "ai-code-autopsy.debounceMs": {
+          "type": "number",
+          "default": 500,
+          "description": "Debounce delay in ms for real-time analysis"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -watch -p tsconfig.json",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-code-autopsy/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}

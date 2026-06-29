@@ -1,0 +1,51 @@
+{
+  "name": "ai-code-autopsy",
+  "version": "1.0.0",
+  "private": false,
+  "description": "We autopsy AI-generated code and expose its structural risks. A viral forensic devtool for CI and CLI.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "ai-code-autopsy": "./bin/ai-code-autopsy.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "@ai-code-autopsy/core": "^1.0.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-code-autopsy"
+  },
+  "keywords": [
+    "ai-detection",
+    "code-forensic",
+    "code-review",
+    "cli",
+    "ai-code",
+    "roast",
+    "developer-tools"
+  ]
+}

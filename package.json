@@ -1,0 +1,43 @@
+{
+  "name": "ai-code-autopsy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "We autopsy AI-generated code and expose its structural risks. A viral devtool that detects AI patterns in your codebase.",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "benchmark": "tsx scripts/benchmark.ts",
+    "clean": "turbo run clean",
+    "cli": "tsx packages/cli/src/index.ts",
+    "scan": "tsx packages/cli/src/index.ts scan",
+    "roast": "tsx packages/cli/src/index.ts roast",
+    "explain": "tsx packages/cli/src/index.ts explain",
+    "ci": "tsx packages/cli/src/index.ts ci",
+    "prepublishOnly": "npm run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "tsx": "^4.7.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "npm@10.0.0",
+  "keywords": [
+    "ai-detection",
+    "code-analysis",
+    "forensic",
+    "developer-tools",
+    "cli",
+    "code-review",
+    "ai-code",
+    "llm-detection"
+  ]
+}
