@@ -1,4 +1,4 @@
-import { AntiAIConfig } from './schema';
+import { AntiAIConfig } from './schema.js';
 
 export const PRESETS: Record<string, AntiAIConfig> = {
   strict: {

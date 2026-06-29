@@ -1,5 +1,5 @@
-import { JSXElementInfo, ASTQuery } from './types';
-import { queryElements } from './traverse';
+import { JSXElementInfo, ASTQuery } from './types.js';
+import { queryElements } from './traverse.js';
 
 export class ASTQueryBuilder {
   private query: ASTQuery = {};
@@ -63,5 +63,5 @@ export function query(el: JSXElementInfo, q: ASTQuery): boolean {
   return queryElements([el], q).length > 0;
 }
 
-export { queryElements } from './traverse';
+export { queryElements } from './traverse.js';
 export type { ASTQuery };

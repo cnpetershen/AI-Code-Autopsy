@@ -1,4 +1,4 @@
-import { JSXElementInfo, Finding, TransformResult } from '../ast/types';
+import { JSXElementInfo, Finding, TransformResult } from '../ast/types.js';
 import * as t from '@babel/types';
 import { generate } from '@babel/generator';
 import { parse } from '@babel/parser';

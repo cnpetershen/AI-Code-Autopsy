@@ -1,4 +1,4 @@
-import { JSXElementInfo, Finding, DetectorResult } from '../ast/types';
+import { JSXElementInfo, Finding, DetectorResult } from '../ast/types.js';
 
 export interface HeuristicRule {
   id: string;

@@ -1,4 +1,4 @@
-import { JSXElementInfo, Finding, DetectorResult, ASTQuery } from '../ast/types';
+import { JSXElementInfo, Finding, DetectorResult, ASTQuery } from '../ast/types.js';
 
 interface LayoutPattern {
   id: string;

@@ -1,6 +1,6 @@
-import { UIFile, JSXElementInfo, Finding, AnalysisResult, UIMetrics, AntiAIConfig } from '../ast/types';
-import { parseUI } from '../ast/parser';
-import { uIFileToElements } from './utils';
+import { UIFile, JSXElementInfo, Finding, AnalysisResult, UIMetrics, AntiAIConfig } from '../ast/types.js';
+import { parseUI } from '../ast/parser.js';
+import { uIFileToElements } from './utils.js';
 
 export class AnalysisContext {
   readonly source: string;

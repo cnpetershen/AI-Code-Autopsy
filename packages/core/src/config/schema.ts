@@ -1,4 +1,4 @@
-import { PresetLevel, Finding, JSXElementInfo, AntiAIConfig, RuleConfig, DetectorConfig } from '../ast/types';
+import { PresetLevel, Finding, JSXElementInfo, AntiAIConfig, RuleConfig, DetectorConfig } from '../ast/types.js';
 
 export const DEFAULT_CONFIG: AntiAIConfig = {
   preset: 'balanced',

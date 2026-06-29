@@ -1,8 +1,8 @@
-import { JSXElementInfo, Finding, DetectorResult } from '../ast/types';
-import { tokenizeTailwind } from '../utils/tailwindTokens';
+import { JSXElementInfo, Finding, DetectorResult } from '../ast/types.js';
+import { tokenizeTailwind } from '../utils/tailwindTokens.js';
 
-export { tokenizeTailwind } from '../utils/tailwindTokens';
-export { classifyClassTokenDensity } from '../utils/tailwindTokens';
+export { tokenizeTailwind } from '../utils/tailwindTokens.js';
+export { classifyClassTokenDensity } from '../utils/tailwindTokens.js';
 
 const AI_TOKEN_SIGNATURES: { pattern: RegExp; category: string; weight: number }[] = [
   { pattern: /backdrop-blur/, category: 'glassmorphism', weight: 0.9 },

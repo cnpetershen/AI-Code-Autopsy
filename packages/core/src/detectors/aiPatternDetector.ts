@@ -1,5 +1,5 @@
-import { JSXElementInfo, Finding, DetectorResult } from '../ast/types';
-import { tokenizeTailwind } from './tailwindDetector';
+import { JSXElementInfo, Finding, DetectorResult } from '../ast/types.js';
+import { tokenizeTailwind } from './tailwindDetector.js';
 
 interface AIPatternRule {
   id: string;

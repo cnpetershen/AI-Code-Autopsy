@@ -1,4 +1,4 @@
-import { JSXElementInfo, UIFile } from '../ast/types';
+import { JSXElementInfo, UIFile } from '../ast/types.js';
 
 export function uIFileToElements(uiFile: UIFile): JSXElementInfo[] {
   return uiFile.elements;

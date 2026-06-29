@@ -1,13 +1,13 @@
-import { AnalysisContext } from './Context';
-import { Finding, DetectorResult, AnalysisResult, TransformResult } from '../ast/types';
-import { computeMetrics } from '../analyzer/metrics';
-import { computeScore } from '../analyzer/score';
-import { generateExplanations, formatExplainSummary } from '../analyzer/explain';
-import { applyGuardrails } from '../transformers/guardrails';
-import { transformClasses } from '../transformers/classTransformer';
-import { transformLayout } from '../transformers/layoutTransformer';
-import { fixSemanticHTML } from '../transformers/semanticFixer';
-import { deduplicateFindings, sortFindingsBySeverity } from './utils';
+import { AnalysisContext } from './Context.js';
+import { Finding, DetectorResult, AnalysisResult, TransformResult } from '../ast/types.js';
+import { computeMetrics } from '../analyzer/metrics.js';
+import { computeScore } from '../analyzer/score.js';
+import { generateExplanations, formatExplainSummary } from '../analyzer/explain.js';
+import { applyGuardrails } from '../transformers/guardrails.js';
+import { transformClasses } from '../transformers/classTransformer.js';
+import { transformLayout } from '../transformers/layoutTransformer.js';
+import { fixSemanticHTML } from '../transformers/semanticFixer.js';
+import { deduplicateFindings, sortFindingsBySeverity } from './utils.js';
 
 export type PipelineStage =
   | 'parse'

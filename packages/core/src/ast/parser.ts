@@ -1,6 +1,6 @@
 import { parse } from '@babel/parser';
 import type { Node, File, JSXElement, JSXFragment, JSXAttribute, JSXText, JSXExpressionContainer, JSXSpreadChild } from '@babel/types';
-import { JSXElementInfo, JSXAttributeInfo, JSXChildInfo, UIFile, ParseError } from './types';
+import { JSXElementInfo, JSXAttributeInfo, JSXChildInfo, UIFile, ParseError } from './types.js';
 
 export function parseUI(source: string): UIFile {
   const errors: ParseError[] = [];

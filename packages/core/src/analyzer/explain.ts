@@ -1,6 +1,6 @@
-import { Finding, ExplainEntry, AnalysisResult } from '../ast/types';
-import { ScoreResult, classifyAIScore } from './score';
-import { UIMetrics } from '../ast/types';
+import { Finding, ExplainEntry, AnalysisResult } from '../ast/types.js';
+import { ScoreResult, classifyAIScore } from './score.js';
+import { UIMetrics } from '../ast/types.js';
 
 export function generateExplanations(
   findings: Finding[],

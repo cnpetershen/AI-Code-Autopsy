@@ -1,4 +1,4 @@
-import { JSXElementInfo, Finding, TransformResult } from '../ast/types';
+import { JSXElementInfo, Finding, TransformResult } from '../ast/types.js';
 
 export interface GuardrailRule {
   id: string;

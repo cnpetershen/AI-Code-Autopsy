@@ -1,6 +1,6 @@
-import { JSXElementInfo, UIMetrics } from '../ast/types';
-import { classifyClassTokenDensity } from '../utils/tailwindTokens';
-import { tokenizeTailwind } from '../utils/tailwindTokens';
+import { JSXElementInfo, UIMetrics } from '../ast/types.js';
+import { classifyClassTokenDensity } from '../utils/tailwindTokens.js';
+import { tokenizeTailwind } from '../utils/tailwindTokens.js';
 
 export function computeMetrics(elements: JSXElementInfo[]): UIMetrics {
   const maxDepth = elements.length > 0 ? Math.max(...elements.map(e => e.depth)) : 0;

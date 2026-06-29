@@ -1,4 +1,4 @@
-import { JSXElementInfo, ASTQuery } from './types';
+import { JSXElementInfo, ASTQuery } from './types.js';
 
 export interface TraverseVisitor {
   onElement?: (element: JSXElementInfo) => void;

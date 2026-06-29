@@ -1,12 +1,12 @@
-import { AnalysisContext } from './Context';
-import { Pipeline, DetectorPlugin } from './Pipeline';
-import { AnalysisResult, TransformResult, AntiAIConfig } from '../ast/types';
-import { DEFAULT_CONFIG } from '../config/schema';
-import { getPreset } from '../config/presets';
-import { detectLayoutPatterns } from '../detectors/layoutDetector';
-import { detectAIClassPatterns } from '../detectors/tailwindDetector';
-import { detectAIPatterns } from '../detectors/aiPatternDetector';
-import { detectHeuristics } from '../detectors/heuristicRules';
+import { AnalysisContext } from './Context.js';
+import { Pipeline, DetectorPlugin } from './Pipeline.js';
+import { AnalysisResult, TransformResult, AntiAIConfig } from '../ast/types.js';
+import { DEFAULT_CONFIG } from '../config/schema.js';
+import { getPreset } from '../config/presets.js';
+import { detectLayoutPatterns } from '../detectors/layoutDetector.js';
+import { detectAIClassPatterns } from '../detectors/tailwindDetector.js';
+import { detectAIPatterns } from '../detectors/aiPatternDetector.js';
+import { detectHeuristics } from '../detectors/heuristicRules.js';
 
 export interface ScanResult {
   analysis: AnalysisResult;

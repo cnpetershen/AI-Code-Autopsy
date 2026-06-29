@@ -1,4 +1,4 @@
-import { Finding, UIMetrics, PresetLevel } from '../ast/types';
+import { Finding, UIMetrics, PresetLevel } from '../ast/types.js';
 
 interface ScoreWeights {
   layoutPatterns: number;
